@@ -4,19 +4,29 @@ This project builds a time-series forecasting model to predict daily sales for t
 
 The model uses **SARIMAX** (Seasonal AutoRegressive Integrated Moving Average with eXogenous Regressors) to forecast sales for individual stores, capturing weekly seasonality and the impact of external factors like promotions and holidays.
 
-## 📈 Key Results (Store 1)
+## 📈 Key Results (Initial Stores)
 
-This repository contains the analysis for a single store (Store 1) to prove the modeling concept.
+This repository initially contains the analysis for individual stores to prove the modeling concept before scaling.
 
-- **Model:** `SARIMAX(1, 1, 1)x(0, 0, 1, 7)`
-- **Competition Score (RMSPE):** **11.93%**
-- **RMSE:** **$583.02**
+### Store 1 Results
 
-The model successfully identified the `Promo` variable as a highly significant (p-value < 0.001) driver of sales.
+* **Model:** `SARIMAX(1, 1, 1)x(0, 0, 1, 7)`
+* **Competition Score (RMSPE):** **11.92%**
+* **RMSE:** **$603.03**
+* **Key Findings:** The model successfully identified the `Promo` variable as a highly significant (p < 0.001) driver of sales changes. `SchoolHoliday` was not significant for this store.
 
-![Model Forecast vs. Actual Sales](https://i.imgur.com/GjQ8tA1.png)
+![Model Forecast vs. Actual Sales - Store 1](https://i.imgur.com/GjQ8tA1.png)
+*(Note: Replace with your actual Store 1 plot link/image)*
 
-_(Note: I've added a placeholder image link here. You can replace this by uploading your `Screenshot 2025-10-22 at 1.18.13 AM.jpg` graph to your GitHub repo and linking to it)._
+### Store 2 Results
+
+* **Model:** `SARIMAX(1, 1, 1)x(0, 0, 1, 7)` (Same stable structure applied)
+* **Competition Score (RMSPE):** **27.47%**
+* **RMSE:** **$1395.65**
+* **Key Findings:** The model converged successfully. `Promo`, `SchoolHoliday`, and `StateHoliday_a` were all found to be statistically significant predictors of sales changes for this store, highlighting store-specific differences. The higher RMSPE suggests this simple model structure is less accurate for Store 2 than for Store 1.
+
+![Model Forecast vs. Actual Sales - Store 2](https://i.imgur.com/placeholder_link_store2.png)
+*(Note: You'll need to generate a link/upload the plot for Store 2 and add it here)*
 
 ## 🛠️ How to Run This Project
 
