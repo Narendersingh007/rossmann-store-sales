@@ -15,8 +15,8 @@ This repository initially contains the analysis for individual stores to prove t
 * **RMSE:** **$603.03**
 * **Key Findings:** The model successfully identified the `Promo` variable as a highly significant (p < 0.001) driver of sales changes. `SchoolHoliday` was not significant for this store.
 
-![Model Forecast vs. Actual Sales - Store 1](https://i.imgur.com/GjQ8tA1.png)
-*(Note: Replace with your actual Store 1 plot link/image)*
+<img width="905" height="459" alt="Screenshot 2025-10-22 at 11 12 44 PM" src="https://github.com/user-attachments/assets/2f4cc82a-b4f1-47fd-b1e2-962e60d0708b" />
+
 
 ### Store 2 Results
 
@@ -25,8 +25,8 @@ This repository initially contains the analysis for individual stores to prove t
 * **RMSE:** **$1395.65**
 * **Key Findings:** The model converged successfully. `Promo`, `SchoolHoliday`, and `StateHoliday_a` were all found to be statistically significant predictors of sales changes for this store, highlighting store-specific differences. The higher RMSPE suggests this simple model structure is less accurate for Store 2 than for Store 1.
 
-![Model Forecast vs. Actual Sales - Store 2](https://i.imgur.com/placeholder_link_store2.png)
-*(Note: You'll need to generate a link/upload the plot for Store 2 and add it here)*
+<img width="879" height="440" alt="Screenshot 2025-10-22 at 11 13 19 PM" src="https://github.com/user-attachments/assets/79a785fd-52c3-49b1-82cf-45d7f2d9e1ce" />
+
 
 ## 🛠️ How to Run This Project
 
